@@ -1,0 +1,5 @@
+# Server settings (ServerProperties)
+server:
+  port: 8181
+logging:
+  file: logs/WarframeQueryBot.log

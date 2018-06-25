@@ -1,0 +1,9 @@
+# Server settings (ServerProperties)
+server:
+  port: 7373
+  ssl:
+    key-store: classpath:api.getick.cn.jks
+    key-store-password: 6z594fhkmrlle
+    key-store-type: JKS
+logging:
+  file: /home/apps/WarframeQueryBot/logs/WarframeQueryBot.log
