@@ -1,0 +1,38 @@
+[
+    {
+        "d": 5358620442,
+        "enable": 1,
+        "method": "aes-128-ctr",
+        "obfs": "plain",
+        "passwd": "ikuacc.cn",
+        "port": 2464,
+        "protocol": "origin",
+        "transfer_enable": 9007199254740992,
+        "u": 22192273,
+        "user": "ikuacc"
+    },
+    {
+        "d": 1606867174,
+        "enable": 1,
+        "method": "aes-128-ctr",
+        "obfs": "plain",
+        "passwd": "xixi",
+        "port": 5656,
+        "protocol": "origin",
+        "transfer_enable": 9007199254740992,
+        "u": 27154737,
+        "user": "bom"
+    },
+    {
+        "d": 217721624,
+        "enable": 1,
+        "method": "aes-128-ctr",
+        "obfs": "plain",
+        "passwd": "nichunyu",
+        "port": 5657,
+        "protocol": "origin",
+        "transfer_enable": 9007199254740992,
+        "u": 1289127,
+        "user": "2gou"
+    }
+]

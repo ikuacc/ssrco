@@ -1,10 +1,15 @@
 package com.getick.utils;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import net.minidev.json.JSONArray;
+import net.minidev.json.JSONObject;
+import org.apache.tomcat.util.http.fileupload.FileUtils;
+
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 工具
@@ -62,7 +67,7 @@ public final class Util {
 
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(
-                            con.getInputStream(), "utf-8"));
+                            con.getInputStream(), StandardCharsets.UTF_8));
             String line;
             StringBuilder builder = new StringBuilder();
             while ((line = reader.readLine()) != null) {
@@ -79,4 +84,8 @@ public final class Util {
         return null;
     }
 
+    public static JavaType getCollectionType(Class<?> collectionClass, Class<?>... elementClasses) {
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.getTypeFactory().constructParametricType(collectionClass, elementClasses);
+    }
 }

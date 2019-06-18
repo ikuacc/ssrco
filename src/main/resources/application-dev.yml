@@ -3,3 +3,5 @@ server:
   port: 8181
 logging:
   file: logs/WarframeQueryBot.log
+mudb:
+  path: mudb/mudb.json

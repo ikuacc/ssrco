@@ -7,3 +7,5 @@ server:
     key-store-type: JKS
 logging:
   file: /home/apps/WarframeQueryBot/logs/WarframeQueryBot.log
+mudb:
+  path: mudb/mudb.json

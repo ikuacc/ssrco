@@ -2,10 +2,10 @@ spring:
   profiles:
     active: dev
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://111.231.56.252:3306/getickdb
-    username: getick
-    password: getick.cn
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://149.28.198.111:3306
+    username: ssrco
+    password: ikuacc
 
     # Tomcat specifics
     tomcat:
